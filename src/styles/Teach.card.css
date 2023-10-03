@@ -1,0 +1,12 @@
+.tech-card:hover{
+    transform: translate(-5px,-5px);
+    opacity: 100%;
+
+}
+
+.tech-card{
+    transition: ease-in-out 0.2s;
+    cursor: pointer;
+    opacity: 85%;
+    border-radius: 0.75rem;
+}
