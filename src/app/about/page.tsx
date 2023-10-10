@@ -1,9 +1,7 @@
 "use client"
 import Navbar from '@/components/Navbar'
 import React from 'react'
-import { AnimatePresence, motion } from 'framer-motion';
 // import { useRouter } from 'next/router';
-
 
 const About = () => {
 
@@ -23,8 +21,10 @@ const About = () => {
 
                 {/* // ?                            Cards                        */}
                 <div className='flex items-center justify-around md:flex-row sm:flex-col sm:gap-5'>
-                    <button
-                        className="block max-w-sm p-6  border border-gray-200 rounded-lg shadow"
+                    <a
+                        href='https://maktab.uz/img/439dce7f77fc0585a48a2ae848c59357.pdf'
+                        target={'_blank'}
+                        className="block max-w-sm p-6  border border-gray-200 rounded-lg transition-all ease-in-out delay-500 shadow-inner hover:shadow-2xl card"
                     >
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             Noteworthy technology acquisitions 2021
@@ -33,10 +33,12 @@ const About = () => {
                             Here are the biggest enterprise technology acquisitions of 2021 so far, in
                             reverse chronological order.
                         </p>
-                    </button>
+                    </a>
 
                     <a
-                        className="block max-w-sm p-6  border border-gray-200 rounded-lg shadow "
+                        href='https://maktab.uz/img/83ecb21cb19225aa785c34df592ae743.m4v'
+                        target={'_blank'}
+                        className="block max-w-sm p-6  border border-gray-200 rounded-lg transition-all ease-in-out delay-500 shadow-inner hover:shadow-2xl card"
                     >
                         <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                             Noteworthy technology acquisitions 2021

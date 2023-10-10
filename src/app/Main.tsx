@@ -3,7 +3,7 @@ import React from 'react'
 import Image from 'next/image'
 import MainImage from '../assets/none.png'
 import { motion } from 'framer-motion'
-
+import './about/about.css';
 
 const Main = () => {
     return (
