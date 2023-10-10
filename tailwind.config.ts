@@ -7,6 +7,10 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      'dela-gothic': ['Dela Gothic One', 'cursive'],
+      'montserrat':['Montserrat','sans-serif']
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
