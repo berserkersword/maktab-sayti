@@ -1,58 +1,34 @@
-"use client"
+import Footer from '@/components/Footer'
 import Navbar from '@/components/Navbar'
 import React from 'react'
-// import { useRouter } from 'next/router';
 
-const About = () => {
-
-    const data = {
-        menuNum: 2
-    }
+const page = () => {
     return (
-        <>
-            <Navbar data={data} />
-            <div
-                style={{ minHeight: '100vh' }}>
-                <div className='w-full flex items-center justify-center min-h-[50vh]'>
-                    <h1 className='dela-gothic text-white text-4xl '>
-                        Odob-axloq qoidalari
-                    </h1>
-                </div>
-
-                {/* // ?                            Cards                        */}
-                <div className='flex items-center justify-around md:flex-row sm:flex-col sm:gap-5'>
-                    <a
-                        href='https://maktab.uz/img/439dce7f77fc0585a48a2ae848c59357.pdf'
-                        target={'_blank'}
-                        className="block max-w-sm p-6  border border-gray-200 rounded-lg transition-all ease-in-out delay-500 shadow-inner hover:shadow-2xl card"
-                    >
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Noteworthy technology acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in
-                            reverse chronological order.
-                        </p>
-                    </a>
-
-                    <a
-                        href='https://maktab.uz/img/83ecb21cb19225aa785c34df592ae743.m4v'
-                        target={'_blank'}
-                        className="block max-w-sm p-6  border border-gray-200 rounded-lg transition-all ease-in-out delay-500 shadow-inner hover:shadow-2xl card"
-                    >
-                        <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                            Noteworthy technology acquisitions 2021
-                        </h5>
-                        <p className="font-normal text-gray-700 dark:text-gray-400">
-                            Here are the biggest enterprise technology acquisitions of 2021 so far, in
-                            reverse chronological order.
-                        </p>
-                    </a>
-
-                </div>
+        <div className='min-h-[100vh] flex justify-center flex-col'>
+            <Navbar data={{ menuNum: 3 }} />
+            <div className='container flex  justify-center mt-40 flex-col px-40'>
+                <h1 className='text-center text-white text-2xl dela-gothic glow'>
+                    BIZ HAQIMIZDA
+                </h1>
+                <p className='text-center font-montserrat font-semibold text-[#EEE] mt-10 text-xl'>
+                    Maktab.uz - 1-11-sinflar uchun eng yirik umumta`lim onlayn maktabi hamda maktab o`quv dasturi bo`yicha videodarslar va boshqa materiallar platformasi.
+                </p>
+                <p className='text-center font-montserrat font-semibold text-[#eee] mt-10 text-xl'>
+                    2020 yildan boshlab biz har bir o`quvchiga eng yaxshi o`qituvchilardan ta`lim olish va ularga baxtli bolalikni ta`minlash uchun yuqori sifatli bepul masofaviy ta`lim tizimini ishlab chiqmoqdamiz.
+                </p>
+                <p className='text-center font-montserrat font-semibold text-[#eee] mt-10 text-xl'>
+                    Platforma doimiy ravishda to`ldirilib va yangilanib boriladi, shuningdek, reklamadan butunlay xoli. Platforma materiallaridan nafaqat maktab o`quvchilari va ularning ota-onalari, balki o`qituvchilar ham maktablarda dars jarayonida foydalana oladilar. Agar kutubxonadan Siz darslikni “javondan olib”, kerakli mavzuni o`zlashtira olsangiz, Maktab.uz - bu masofaviy ta`limning to`laqonli ekotizimidir
+                </p>
+                <p className='text-center font-montserrat font-semibold text-[#eee] mt-10 text-xl'>
+                    Nima uchun anan bu sayt ?
+                </p>
+                <p className='text-center font-montserrat font-semibold text-[#eee] mt-10 text-xl'>
+                    Ba`zilar uchun ushbu platforma repetitorning o`rnini bosadigan tizim bo`lsa, boshqalar uchun - uydagi haqiqiy maktabdir. Kimdir oilasi bilan dunyo bo`ylab sayohat qiladi, tez-tez boshqa joyga ko`chadi yoki chet elda yashaydi. Kimdir o‘z sport yoki san’at mashg‘ulotlarini maktab bilan uyg‘unlashtira olmaydi. Kimnidir maktabga borishdan jamoa yoki o‘qituvchilar bilan nizolar to‘xtatadi, kimnidir ta’lim sifati qoniqtirmaydi, kimgadir esa oilaning e’tiqodi ruxsat etmaydi. Ularning barchasini umumiy tanlov - bepul va sifatli masofaviy ta`limni tanlash birlashtiradi.
+                </p>
             </div>
-        </>
+            <Footer />
+        </div>
     )
 }
 
-export default About
+export default page
