@@ -10,7 +10,7 @@ const Navbar = ({ data }: { data: NavData }) => {
     const [navHamburger, setnavHamburger] = useState(true)
     return (
 
-        <nav className="fixed w-full z-20 top-0 left-0  ">
+        <nav className="fixed w-full z-20 top-0 left-0">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between backdrop-blur-lg mx-auto p-4 shadow-lg rounded">
                 <Link href="/" className="flex items-center">
                     <span className="self-center text-2xl font-semibold whitespace-nowrap montserrat text-white hover:text-[#e78b40]">455-maktab</span>
