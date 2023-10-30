@@ -6,7 +6,7 @@ import Tech3 from '../assets/teacher3.png';
 
 const PracticeAdvice = () => {
     return (
-        <div className='w-full  px-[8rem] mt-10'>
+        <div className='w-full  lg:px-[8rem] sm:px-10 mt-10'>
             <h1 className='text-3xl text-white font-bold montsterrat text-center sm:text-start'>
                 GET QUALITY EDUCATION
             </h1>

@@ -45,16 +45,14 @@ export default function Home() {
 
   return (
     <main className="flex flex-col items-center justify-between ">
-      <AnimatePresence mode='wait'>
-        {/* <UserContext.Provider value={{ user, setUser }}> */}
-        <Navbar data={NavData} />
-        <Main />
-        <Watch />
-        <PracticeAdvice />
-        <ToastContainer />
-        <Footer />
-        {/* </UserContext.Provider> */}
-      </AnimatePresence>
+      {/* <UserContext.Provider value={{ user, setUser }}> */}
+      <Navbar data={NavData} />
+      <Main />
+      <Watch />
+      <PracticeAdvice />
+      <ToastContainer />
+      <Footer />
+      {/* </UserContext.Provider> */}
     </main>
   )
 }
